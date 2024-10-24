@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './db/connect';
 import { NextFunction, Request, Response } from "express";
+import 'express-async-errors' ;
 
 const productsRouter = require('./routes/products')
 

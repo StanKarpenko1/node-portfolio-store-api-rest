@@ -18,6 +18,7 @@ const errorHandlerMiddleware = (
         return res.status(errorStatus).json({ msg: err.message })
     }
 
+
     return res.status(500).json({ msg: 'Server error'})
 }
 
