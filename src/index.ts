@@ -13,7 +13,7 @@ const app = express();
 
 // Define port and MongoDB connection string
 const port = process.env.port || 5001;
-const mongoURL = process.env.MONGO_URL;
+const mongoURL = process.env.MONGO_URL;  
 
 const notFoundMiddleware = require('./middleware/not-found') ;
 const errorMiddleware = require('./middleware/error-handler') ;
@@ -43,7 +43,7 @@ const start = async () => {
         });
 
     } catch (e) {
-        console.log (e)
+        console.log (e) 
     }
 }
 
